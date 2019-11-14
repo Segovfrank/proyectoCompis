@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'antlr'
+
+}
+
+group 'proyecto_compiladores'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    antlr "org.antlr:antlr:3.5.2" // use ANTLR version 3
+
+}
